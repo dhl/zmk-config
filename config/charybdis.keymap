@@ -75,16 +75,6 @@
             key-positions = <43 44>;
             bindings = <&mo 3>;
         };
-        combo_mouse_drag_l {
-            timeout-ms = <50>;
-            key-positions = <38 39 40>;
-            bindings = <&mo 4>;
-        };
-        combo_mouse_drag_r {
-            timeout-ms = <50>;
-            key-positions = <43 44 45>;
-            bindings = <&mo  4>;
-        };
     };
 
     behaviors {
@@ -136,8 +126,8 @@
 &trans  &trans          &trans        &trans        &trans        &trans              &trans      &trans  &trans  &trans  &trans  &trans
 &trans  &trans          &trans        &trans        &trans        &trans              &trans      &trans  &trans  &trans  &trans  &trans
 &trans  &trans          &trans        &trans        &trans        &trans              &trans      &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans        &trans        &trans        &trans              &trans      &trans  &trans  &trans  &trans  &trans
-                                      &mkp MB2      &mkp MB1      &mkp MB3            &mkp MB3    &mkp MB1
+&trans  &trans          &mo 4         &trans        &trans        &trans              &trans      &trans  &trans  &mo 4   &trans  &trans
+                                     &mkp MB2      &mkp MB1      &mkp MB3            &mkp MB3    &mkp MB1
                                                     &trans        &mkp MB2            &mkp MB2
             >;
         };
