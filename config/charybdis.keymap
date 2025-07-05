@@ -65,14 +65,9 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_mouse_l {
+        combo_mouse_drag {
             timeout-ms = <50>;
-            key-positions = <39 40>;
-            bindings = <&mo 3>;
-        };
-        combo_mouse_r {
-            timeout-ms = <50>;
-            key-positions = <43 44>;
+            key-positions = <48 53>;
             bindings = <&mo 3>;
         };
     };
@@ -92,8 +87,8 @@
 &kp TAB    &kp Q    &kp W    &kp E      &kp R      &kp T           &kp Y       &kp U      &kp I      &kp O    &kp P       &kp BSLH
 &kp CAPS   LHM4(A)  LHM3(S)  LHM2(D)    LHM1(F)    &kp G           &kp H       RHM1(J)    RHM2(K)    RHM3(L)  RHM4(SEMI)  &kp SQT
 &kp LSHFT  &kp Z    &kp X    &kp C      &kp V      &kp B           &kp N       &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                             &kp LGUI   &kp SPACE  &mo 1           &mo 2       &kp ENTER
-                                        &kp LALT   &kp BSPC        &kp DEL
+                             &mkp MB1   &kp SPACE  &mo 1           &mo 2       &kp ENTER
+                                        &mkp MB2   &kp BSPC        &kp DEL
             >;
         };
 
@@ -104,7 +99,7 @@
 &none      &none      &none     &none     &none      &none              &kp LBKT         &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp RBKT       &none
 &none      &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &none              &kp KP_PLUS      &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS   &kp KP_EQUAL
 &none      &none      &none     &none     &none      &none              &kp KP_MULTIPLY  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DIVIDE  &kp KP_DOT
-                                &none     &none      &trans             &trans    &trans
+                                &trans    &none      &trans             &trans    &trans
                                           &trans     &trans             &trans
             >;
         };
@@ -116,19 +111,19 @@
 &kp C_NEXT  &none     &none     &none     &none     &none             &none      &none      &none      &none      &none      &kp C_VOL_UP
 &kp C_PP    &kp LEFT  &kp UP    &kp DOWN  &kp RIGHT &none             &none      &kp RSHFT  &kp RGUI   &kp RALT   &kp RCTRL  &kp C_MUTE
 &kp C_PREV  &kp HOME  &kp PGUP  &kp PGDN  &kp END   &none             &none      &none      &none      &none      &none      &kp C_VOL_DN
-                                &none     &none     &trans            &trans     &trans
-                                          &none     &none             &trans
+                                &trans    &none      &trans           &trans    &trans
+                                          &trans     &trans           &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &trans          &trans        &trans        &trans        &trans              &trans      &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans        &trans        &trans        &trans              &trans      &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans        &trans        &trans        &trans              &trans      &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &mo 4         &trans        &trans        &trans              &trans      &trans  &trans  &mo 4   &trans  &trans
-                                     &mkp MB2      &mkp MB1      &mkp MB3            &mkp MB3    &mkp MB1
-                                                    &trans        &mkp MB2            &mkp MB2
+        &trans  &trans          &trans        &trans        &trans        &trans              &trans      &trans  &trans  &trans  &trans  &trans
+        &trans  &trans          &trans        &trans        &trans        &trans              &trans      &trans  &trans  &trans  &trans  &trans
+        &trans  &trans          &trans        &trans        &trans        &trans              &trans      &trans  &trans  &trans  &trans  &trans
+        &trans  &trans          &trans        &trans        &trans        &trans              &trans      &trans  &trans  &trans  &trans  &trans
+                                              &trans        &none         &trans              &trans      &trans
+                                                            &trans        &trans              &trans
             >;
         };
 
@@ -138,8 +133,8 @@
         &trans  &trans          &trans        &trans        &trans        &trans              &trans      &trans  &trans  &trans  &trans  &trans
         &trans  &trans          &trans        &trans        &trans        &trans              &trans      &trans  &trans  &trans  &trans  &trans
         &trans  &trans          &trans        &trans        &trans        &trans              &trans      &trans  &trans  &trans  &trans  &trans
-                                              &mkp MB2      &mkp MB1      &mkp MB3            &mkp MB3    &mkp MB1
-                                                            &trans        &mkp MB2            &mkp MB2
+                                              &trans        &none         &trans              &trans      &trans
+                                                            &trans        &trans              &trans
             >;
         };
     };
