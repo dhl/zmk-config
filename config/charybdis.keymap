@@ -128,7 +128,7 @@
         };
 
         layer_3 {
-            label = "Mouse Drag";
+            label = "Scroll";
             bindings = <
 &trans      &trans      &trans      &trans      &trans      &trans        &trans      &trans      &trans      &trans      &trans      &trans
 &trans      &trans      &trans      &trans      &trans      &trans        &trans      &trans      &trans      &trans      &trans      &trans
